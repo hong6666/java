@@ -1,0 +1,35 @@
+package lhh.dataStructureAndAlgorithm;
+
+/**
+ * @program: IdeaJava
+ * @Date: 2019/11/29 14:43
+ * @Author: lhh
+ * @Description: 泛型类
+ */
+public class Box<T> {
+    private T t;
+
+    public void add(T t)
+    {
+        this.t = t;
+    }
+
+    public T get()
+    {
+        return t;
+    }
+
+    public static void main (String[] args){
+        Box<Integer> integerBox = new Box<Integer>();
+        Box<String> stringBox = new Box<String>();
+
+        integerBox.add(new Integer(10));
+        stringBox.add(new String("菜鸟教程"));
+
+        System.out.println("整数型值为：" + integerBox.get()+"\n");
+        System.out.println("字符串型值为：" + stringBox.get());
+
+    }
+
+
+}
