@@ -13,7 +13,8 @@ public class TicketWindow extends Thread {
     //最对受理50笔业务
     private static final int MAX = 50;
 
-    private static int index = 1;
+    private int index = 1;
+    /*private static int index = 1;*/
 
     public TicketWindow(String name) {
         this.name = name;

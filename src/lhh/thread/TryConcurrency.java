@@ -18,6 +18,12 @@ public class TryConcurrency {
                 enjoyMusic();
             }
         }.start();
+
+        /*new Thread(() ->
+        {
+            enjoyMusic();
+        }).start();*/
+
         browseNews();
     }
 
