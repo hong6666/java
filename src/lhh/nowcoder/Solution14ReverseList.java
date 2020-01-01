@@ -20,17 +20,14 @@ public class Solution14ReverseList {
         ListNode pre = null;
         ListNode p = null;
         if(head == null || head.next == null)return head;
-        else
+        while(head != null)
         {
-            while(head != null)
-            {
-                p = head.next;
-                head.next = pre;
-                pre = head;
-                head = p;
-            }
-            return pre;
+            p = head.next;
+            head.next = pre;
+            pre = head;
+            head = p;
         }
+        return pre;
     }
 
     public static void showListNode(ListNode head)
@@ -42,6 +39,7 @@ public class Solution14ReverseList {
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
         ListNode a = new ListNode(1);
         ListNode b = new ListNode(2);
