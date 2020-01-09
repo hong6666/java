@@ -1,6 +1,8 @@
 package lhh.array数组;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @program: IdeaJava
@@ -19,7 +21,9 @@ public class TestMyArrayList {
         boolean a = myArrayList.remove("kdjas");
         System.out.println(a);
         System.out.println(myArrayList.getSize());
-
+        Map ooo = new HashMap();
+        int leftmove = 1 << 4;
+        System.out.println(leftmove);
 
     }
 }
