@@ -1,4 +1,4 @@
-package lhh.pattern.SingletonPattern;
+package lhh.pattern.singletonPattern;
 
 /**
  * @program: IdeaJava

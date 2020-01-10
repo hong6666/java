@@ -1,4 +1,4 @@
-package lhh.pattern.SingletonPattern;
+package lhh.pattern.singletonPattern;
 
 /**
  * @program: IdeaJava
@@ -32,9 +32,11 @@ class LazySingleton{
     }
 }
 
+//安全的懒汉模式
 class SafeLazySingleton{
     private  static SafeLazySingleton safeLazySingletonInstance;
     private SafeLazySingleton(){}
+    //getSafeLazySingletonInstance在方法上加了synchronized
     public static synchronized SafeLazySingleton getSafeLazySingletonInstance()
     {
         if (safeLazySingletonInstance == null)

@@ -1,4 +1,4 @@
-package lhh.pattern.SingletonPattern;
+package lhh.pattern.singletonPattern;
 
 /**
  * @program: IdeaJava
@@ -9,7 +9,9 @@ package lhh.pattern.SingletonPattern;
 public class DoubleLockSingletonApp {
     public static void main(String[] args)
     {
-
+        DoubleLockSingleton instance1 = DoubleLockSingleton.getDoubleLockSingletonInstance();
+        DoubleLockSingleton instance2 = DoubleLockSingleton.getDoubleLockSingletonInstance();
+        System.out.println(instance1 == instance2);
     }
 }
 class DoubleLockSingleton{
