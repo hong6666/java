@@ -1,4 +1,4 @@
-package lhh.pattern.adaptorPattern;
+package lhh.pattern.adapterPattern;
 
 /**
  * @program: IdeaJava
@@ -32,7 +32,7 @@ class VoltageAdapter{
     }
 }
 
-public class AdaptorPatternTest {
+public class AdapterPatternTest {
 
     public static void main(String[] args) {
         Phone phone = new Phone();
