@@ -1,4 +1,4 @@
-package lhh.pattern.adapterPattern.adapterPattern;
+package lhh.pattern.adapterPattern.adapterPatternEg;
 
 /**
  * @program: IdeaJava
@@ -20,7 +20,7 @@ class Adaptee {
     }
 }
 
-//类适配器类，继承适配器
+//类适配器类，继承适配器拥有了specificRequest方法，实现Target目标接口，在实现中调用我们的specificRequest方法
 class ClassAdapter extends Adaptee implements Target {
 
     public void request()
@@ -35,10 +35,5 @@ public class ClassAdapterTest {
         System.out.println("类适配器模式测试：");
         Target target = new ClassAdapter();
         target.request();
-
     }
-
-
-
-
 }
