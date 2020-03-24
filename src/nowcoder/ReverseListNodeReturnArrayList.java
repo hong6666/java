@@ -1,8 +1,6 @@
-package lhh.nowcoder;
+package nowcoder;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /**
  * @program: IdeaJava

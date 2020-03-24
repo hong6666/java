@@ -1,4 +1,4 @@
-package lhh.nowcoder;
+package nowcoder;
 
 /**
  * @program: IdeaJava
