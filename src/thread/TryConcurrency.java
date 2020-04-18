@@ -1,8 +1,6 @@
-package lhh.thread;
+package thread;
 
 import java.util.concurrent.TimeUnit;
-
-import static java.lang.Thread.*;
 
 /**
  * @program: IdeaJava

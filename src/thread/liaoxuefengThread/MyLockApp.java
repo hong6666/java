@@ -1,4 +1,4 @@
-package lhh.thread.liaoxuefengThread;
+package thread.liaoxuefengThread;
 
 /**
  * @program: IdeaJava

@@ -1,4 +1,4 @@
-package lhh.thread.chapter03;
+package thread.chapter03;
 
 import java.util.List;
 

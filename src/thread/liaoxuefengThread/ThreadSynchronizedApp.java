@@ -1,4 +1,4 @@
-package lhh.thread.liaoxuefengThread;
+package thread.liaoxuefengThread;
 
 /**
  * @program: IdeaJava
@@ -20,7 +20,7 @@ public class ThreadSynchronizedApp {
         {
            for(int i = 0;i < 10000;i++)
            {
-               synchronized(Counter.class)
+               synchronized(Counter.lock)
                {
                    Counter.count++;
                }
@@ -30,7 +30,7 @@ public class ThreadSynchronizedApp {
         {
             for(int i = 0;i < 10000;i++)
             {
-                synchronized(Counter.class)
+                synchronized(Counter.lock)
                 {
                     Counter.count--;
                 }
@@ -46,6 +46,7 @@ public class ThreadSynchronizedApp {
 }
 class Counter
 {
+    public static final Object lock = new Object();
     public static int count = 0;
 }
 

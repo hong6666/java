@@ -1,6 +1,4 @@
-package lhh.thread.chapter03;
-
-import javax.sound.midi.Soundbank;
+package thread.chapter03;
 
 /**
  * @program: IdeaJava

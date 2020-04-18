@@ -1,6 +1,4 @@
-package lhh.thread;
-
-import java.util.stream.IntStream;
+package thread;
 
 /**
  * @program: IdeaJava

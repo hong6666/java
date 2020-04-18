@@ -1,4 +1,4 @@
-package lhh.thread.chapter02;
+package thread.chapter02;
 
 /**
  * @program: IdeaJava
