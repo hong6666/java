@@ -33,6 +33,16 @@ public class WaitTestApp {
     {
         try
         {
+            MUTEX.wait();
+        } catch (InterruptedException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    private synchronized void testWaitB()
+    {
+        try
+        {
             this.wait();
         } catch (InterruptedException e)
         {
