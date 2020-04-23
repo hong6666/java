@@ -1,6 +1,5 @@
 package lhh.jvm;
 
-import lhh.thread.Test;
 
 /**
  * @program: IdeaJava

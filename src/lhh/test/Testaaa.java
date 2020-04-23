@@ -1,5 +1,7 @@
 package lhh.test;
 
+import java.util.Scanner;
+
 /**
  * @program: IdeaJava
  * @Date: 2019/11/28 22:15
@@ -7,10 +9,22 @@ package lhh.test;
  * @Description:
  */
 public class Testaaa {
-    static int agea;
     public static void main(String[] args) {
-     double a = Math.random() ;
-        System.out.println(a);
-        System.out.print(' ');
+        String s = new String("Hello World ");
+        String ss = "a";
+        System.out.println(Testaaa.lenghOfLastWord(ss));
+
+    }
+    public static int lenghOfLastWord(String s)
+    {
+        int end = s.length() - 1;
+
+        //去掉末尾的空格
+        while (end >= 0 && s.charAt(end) == ' ') end--;
+
+        if (end < 0) return 0;
+        int start = end;
+        while(start >= 0 && s.charAt(start) != ' ')start--;
+        return end - start;
     }
 }

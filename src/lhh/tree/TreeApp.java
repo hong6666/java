@@ -190,7 +190,7 @@ public class TreeApp {
         return true;
     }
 
-    public void displayTree()
+    /*public void displayTree()
     {
         Stack globalStack = new Stack();
         globalStack.push(root);
@@ -233,7 +233,7 @@ public class TreeApp {
                 while(localStack.isEmpty() == false)
                     globalStack.push(localStack.pop());
         }
-    }
+    }*/
 
 
     public static void main(String[] args) {
@@ -262,7 +262,7 @@ public class TreeApp {
         System.out.println();
 
         /*System.out.println("删除"+myTree.delete(8));*/
-      myTree.displayTree();
+      /*myTree.displayTree();*/
     }
 
 }

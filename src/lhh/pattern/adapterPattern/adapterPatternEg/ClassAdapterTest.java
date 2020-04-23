@@ -4,7 +4,7 @@ package lhh.pattern.adapterPattern.adapterPatternEg;
  * @program: IdeaJava
  * @Date: 2020/2/25 9:52
  * @Author: lhh
- * @Description:
+ * @Description: 类适配器模式
  */
 
 // 目标接口,我们使用的接口
