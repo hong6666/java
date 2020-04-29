@@ -1,10 +1,7 @@
 package thread.chapter08线程池原理及自定义线程池;
 
 /**
- * @program: IdeaJava
- * @Date: 2020/4/28 11:30
- * @Author: lhh
- * @Description: 一个完整的线程池应该具备如下要素：
+ * 一个完整的线程池应该具备如下要素：
  * 1、任务队列：用于缓存提交的任务。
  * 2、线程数量管理功能：一个线程池必须能够很好的管理和控制线程数量，线程初始数量init，
  *    线程池自动扩充是的最大线程数量max，在空闲时需要释放线程但是也要维护一定数量的活跃数量
@@ -53,7 +50,7 @@ public interface ThreadPool {
     /**
      * 获取线程池中活跃的线程的数量
      */
-    int getAtiveCount();
+    int getActiveCount();
 
     /**
      * 查看线程池是否已经被shutdown

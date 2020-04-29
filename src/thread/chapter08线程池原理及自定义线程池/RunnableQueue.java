@@ -1,10 +1,7 @@
 package thread.chapter08线程池原理及自定义线程池;
 
 /**
- * @program: IdeaJava
- * @Date: 2020/4/28 14:26
- * @Author: lhh
- * @Description: 任务队列主要用于存放提交的Runnable任务，该Runnable是一个BlockedQueue，并有limit的限制
+ * 任务队列主要用于存放提交的Runnable任务，该Runnable是一个BlockedQueue，并有limit的限制
  */
 public interface RunnableQueue {
     /**
