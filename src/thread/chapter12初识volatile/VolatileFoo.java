@@ -16,10 +16,12 @@ public class VolatileFoo {
     /**
      * 加了volatile输出不一样
      */
-    static volatile int init_value = 0;
+    static  int init_value = 0;
 
     public static void main(String[] args)
     {
+
+        //启动一个Reader线程，当发现localValue和init_vaule不同时，输出init_value被修改的信息
         new Thread(() ->
         {
             int localValue = init_value;
@@ -34,11 +36,13 @@ public class VolatileFoo {
             }
         },"Reader").start();
 
+        //启动Updater线程，主要用于对init_value的修改，当local_value>=5时退出
         new Thread(() ->
         {
             int localValue = init_value;
             while (localValue < MAX)
             {
+                //修改init_value
                 System.out.printf("The init_value will be changed to [%d]\n",++localValue);
                 init_value = localValue;
                 try {
