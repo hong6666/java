@@ -4,7 +4,7 @@ import javafx.beans.value.ObservableValue;
 
 /**
  * ObservableThread
- *
+ * 2020-5-27观察者模式和线程结合搞不懂
  * @author 李弘昊
  * @since 2020/5/25
  */
@@ -18,14 +18,34 @@ public class ObservableThread<T> extends Thread implements Observable{
 
     public ObservableThread(Task<T> task)
     {
-        this(new TaskLifecycle.EmptyLifecycle<>(),task)
+        this(new TaskLifecycle.EmptyLifecycle<>(),task);
     }
 
-    public ObservableValue
+    public ObservableThread(TaskLifecycle<T> lifecycle,Task<T> task)
+    {
+        super();
+        if (task == null)
+        {
+            throw new IllegalArgumentException("The task is required.");
+        }
+        this.lifecycle = lifecycle;
+        this.task = task;
+    }
+
+    @Override
+    public final void run()
+    {
+        //TODO
+    }
+
+    private void update(Cycle cycle,T result,Exception e)
+    {
+        //TODO
+    }
 
     @Override
     public Cycle getCycle() {
-        return null;
+        return this.cycle;
     }
 
 }
