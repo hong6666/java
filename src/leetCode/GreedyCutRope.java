@@ -1,4 +1,4 @@
-package lhh.leetCode;
+package leetCode;
 
 /**
  * @program: IdeaJava

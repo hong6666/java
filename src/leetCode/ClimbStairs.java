@@ -1,4 +1,4 @@
-package lhh.leetCode;
+package leetCode;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
