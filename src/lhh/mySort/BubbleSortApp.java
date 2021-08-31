@@ -9,23 +9,23 @@ import java.util.Arrays;
  * @Description: 冒泡排序
  */
 public class BubbleSortApp {
-    public static int[] bubbleSort(int[]a)
+    public static int[] bubbleSort(int[]nums)
     {
-        for(int i=0;i<a.length-1;i++)
+        for(int i=0;i<nums.length-1;i++)
         {
-            for(int j=0;j<a.length-1-i;j++)
+            for(int j=0;j<nums.length-1-i;j++)
             {
-                if(a[j]>a[j+1])
+                if(nums[j]>nums[j+1])
                 {
-                    int temp=a[j];
-                    a[j]=a[j+1];
-                    a[j+1]=temp;
+                    int temp=nums[j];
+                    nums[j]=nums[j+1];
+                    nums[j+1]=temp;
                 }
 
             }
         }
-        System.out.println(Arrays.toString(a));
-        return a;
+        System.out.println(Arrays.toString(nums));
+        return nums;
     }
 
     public static int[] bubbleSort2(int[] a)
@@ -33,7 +33,8 @@ public class BubbleSortApp {
         boolean bool = true;
         while(bool)
         {
-            bool=false;//当下面代码没执行就说明，排序都排好了，就不用再循环了
+            // 当下面代码没执行就说明，排序都排好了，就不用再循环了
+            bool=false;
             for(int i = 0;i<a.length-1;i++)
             {
                 if(a[i]>a[i+1])
@@ -50,8 +51,8 @@ public class BubbleSortApp {
     }
 
     public static void main(String[] args) {
-        int num[] = {8,2,3,5};
-        BubbleSortApp.bubbleSort(num);
+        int nums[] = {8,2,3,5};
+        BubbleSortApp.bubbleSort(nums);
 
     }
 }

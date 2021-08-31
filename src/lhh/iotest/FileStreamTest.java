@@ -12,14 +12,14 @@ public class FileStreamTest {
     public static void main(String[] args) {
         try{
             byte bw[] = {11,22,3,40,5};
-            OutputStream os = new FileOutputStream("test.txt");
+            OutputStream os = new FileOutputStream("Test.txt");
             for (int x = 0; x < bw.length; x++)
             {
                 os.write(bw[x]);
             }
             os.close();
 
-            InputStream is = new FileInputStream("test.txt");
+            InputStream is = new FileInputStream("Test.txt");
             int size = is .available();
 
             for(int i = 0;i < size; i++)

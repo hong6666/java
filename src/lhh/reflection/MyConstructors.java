@@ -1,4 +1,4 @@
-package lhh.fanshe;
+package lhh.reflection;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 public class MyConstructors {
     public static void main(String[] args) throws Exception{
         //1.加载Class对象
-        Class clazz = Class.forName("lhh.fanshe.Student");
+        Class clazz = Class.forName("lhh.reflection.Student");
 
         System.out.println("***********所有公有构造方法***********");
         Constructor[] conArray = clazz.getConstructors();
